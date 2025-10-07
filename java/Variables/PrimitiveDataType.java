@@ -34,7 +34,7 @@ public class PrimitiveDataType {
 
         // boolean
         boolean isUpSkilling = true;
-        System.out.println("Boolean: " + is);
+        System.out.println("Boolean: " + isUpSkilling);
 
     }
 }
