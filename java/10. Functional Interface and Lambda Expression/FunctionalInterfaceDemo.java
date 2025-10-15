@@ -13,9 +13,10 @@ interface FunctionalInterface1{
     String toString();
 }
 
+// Functional Interface implementation using "implements" keyword
 class ChildClass implements FunctionalInterface1{
     public void abstractMethod1(){
-        System.out.println("This is abstract method");
+        System.out.println("abstract method implementation");
     }
 }
 
@@ -25,5 +26,13 @@ public class FunctionalInterfaceDemo{
         obj.abstractMethod1();
         obj.defaultMethod();
         FunctionalInterface1.staticMethod();
+
+        // Functional interface implementation using Anonymous Class
+        FunctionalInterface1 obj2 = new FunctionalInterface1() {
+            public void abstractMethod1(){
+                System.out.println("Abstract Method implementation");
+            }
+        };
+        obj2.abstractMethod1();
     }
 }
